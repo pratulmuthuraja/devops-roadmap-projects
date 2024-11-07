@@ -7,7 +7,7 @@ Write a script to analyse basic server performance stats.
 
 Goal of this project is to write a script to analyse server performance stats.
 
-## Requirements
+## Project Requirements
 
 You are required to write a script server-stats.sh that can analyse basic server performance stats. You should be able to run the script on any Linux server and it should give you the following stats:
 
@@ -18,4 +18,29 @@ You are required to write a script server-stats.sh that can analyse basic server
 - Top 5 processes by memory usage
 
 Stretch goal: Feel free to optionally add more stats such as os version, uptime, load average, logged in users, failed login attempts etc.
+
+## Setup & Usage
+
+Requirements: Any Linux Environment (Ubuntu, PopOS!, WSL, etc.)
+
+### Setup
+
+1. Navigate to the folder you want to clone the repository into.
+
+```bash
+git clone https://github.com/pratulmuthuraja/server-performance-stats.git
+cd server-performance-stats
+```
+
+2. Make file executable
+
+```bash
+sudo chmod +x server-stats.sh
+```
+
+3. Run script
+
+```bash
+./server-stats.sh
+```
 
