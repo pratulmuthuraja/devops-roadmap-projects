@@ -38,7 +38,9 @@ cd server-performance-stats
 sudo chmod +x server-stats.sh
 ```
 
-3. Run script
+### Usage
+
+1. Run script
 
 ```bash
 ./server-stats.sh
