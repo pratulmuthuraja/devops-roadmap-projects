@@ -29,6 +29,8 @@ df -h --total | grep "total" | awk '{
 
 # TODO: Top 5 Processes by CPU Usage
 echo -e "\n~~ Top 5 Processes (CPU Usage) ~~~\n"
+top -bn1 -o %CPU | sed -n '7,12p'
 
 # TODO: Top 5 Processes by Memory Usage
 echo -e "\n~~ Top 5 Processes (Memory Usage) ~~~\n"
+top -bn1 -o %MEM | sed -n '7,12p'
