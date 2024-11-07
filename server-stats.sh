@@ -9,9 +9,14 @@ echo -e "\n~~~ Server Stats ~~~\n"
 echo -n "Total CPU Usage: "
 top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8"%"}'
 
-# TODO: Total Memory Usage
+# Total Memory Usage
 echo -e "\n~~~ Total Memory Usage ~~~\n"
-top -bn1 | grep "MiB Mem" | awk '{gsub(/,/,""); print $4" "$5"\n"$6+$10" "$7"\n"$8" "$9}'
+top -bn1 | grep "MiB Mem" | awk '{
+                                  gsub(/,/,"");
+                                  printf "Total:\t %d MiB (100%)\n", $4
+                                  printf "Used:\t %d MiB (%.2f%)\n", $8, ($8/$4) * 100
+                                  printf "Free:\t %d MiB (%.2f%)\n", $6+$10, (($6+$10)/$4) * 100
+                                  }'
 
 # TODO: Total Disk Usage
 echo -e "\n~~ Total Disk Usage ~~~\n"
