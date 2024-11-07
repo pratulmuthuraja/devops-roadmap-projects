@@ -1,13 +1,15 @@
-# Server Performance Stats
+# DevOps Roadmap Projects
 
+Projects are part of [DevOps Roadmap](https://roadmap.sh/devops), Compiled Projects by [roadmap.sh](https://roadmap.sh/)
+
+## Server-Performance-Stats
+
+Write a script to analyse basic server performance stats.
 [Project Link](https://roadmap.sh/projects/server-stats)
 
-Part of [DevOps Roadmap](https://roadmap.sh/devops) Projects by [roadmap.sh](https://roadmap.sh/)
-Write a script to analyse basic server performance stats.
+### Project Goal
 
 Goal of this project is to write a script to analyse server performance stats.
-
-## Project Requirements
 
 You are required to write a script server-stats.sh that can analyse basic server performance stats. You should be able to run the script on any Linux server and it should give you the following stats:
 
@@ -18,8 +20,6 @@ You are required to write a script server-stats.sh that can analyse basic server
 - Top 5 processes by memory usage
 
 Stretch goal: Feel free to optionally add more stats such as os version, uptime, load average, logged in users, failed login attempts etc.
-
-## Setup & Usage
 
 Requirements: Any Linux Environment (Ubuntu, PopOS!, WSL, etc.)
 
