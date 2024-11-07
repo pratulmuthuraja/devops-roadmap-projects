@@ -27,10 +27,10 @@ df -h --total | grep "total" | awk '{
                                       printf "Free:\t%s (%.2f%)\n", $4, $5
                                     }'
 
-# TODO: Top 5 Processes by CPU Usage
+# Top 5 Processes by CPU Usage
 echo -e "\n~~ Top 5 Processes (CPU Usage) ~~~\n"
 top -bn1 -o %CPU | sed -n '7,12p'
 
-# TODO: Top 5 Processes by Memory Usage
+# Top 5 Processes by Memory Usage
 echo -e "\n~~ Top 5 Processes (Memory Usage) ~~~\n"
 top -bn1 -o %MEM | sed -n '7,12p'
