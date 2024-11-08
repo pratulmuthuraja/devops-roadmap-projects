@@ -28,8 +28,8 @@ Requirements: Any Linux Environment (Ubuntu, PopOS!, WSL, etc.)
 1. Navigate to the folder you want to clone the repository into.
 
 ```bash
-git clone https://github.com/pratulmuthuraja/server-performance-stats.git
-cd server-performance-stats
+git clone https://github.com/pratulmuthuraja/devops-roadmap-projects.git
+cd devops-roadmap-projects/server-performance-stats.sh
 ```
 
 2. Make file executable
@@ -58,7 +58,7 @@ The tool should run from the command line, accept the log directory as an argume
 
 Provide the log directory as an argument when running the tool.
 
-log-archive <log-directory>
+log-archive *log-directory*
 
 The tool should compress the logs in a tar.gz file and store them in a new directory.
 The tool should log the date and time of the archive to a file.
@@ -67,4 +67,24 @@ logs_archive_20240816_100648.tar.gz
 
 ### Setup
 
+1. Navigate to the folder you want to clone the repository into.
+
+```bash
+git clone https://github.com/pratulmuthuraja/devops-roadmap-projects.git
+cd devops-roadmap-projects/log-archive-tool/
+```
+
+2. Make file executable
+
+```bash
+sudo chmod +x log-archive.sh
+```
+
 ### Usage
+
+1. Run script
+
+```bash
+./log-archive.sh <path_to_folder>
+```
+
