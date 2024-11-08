@@ -1,11 +1,19 @@
 #!/bin/bash
 
-echo "Hello"
+# Get time and date
 
-# TODO: Get input from the user
+DATE=$(date +"%Y%m%d")
+TIME=$(date +"%H%M%S")
 
-# TODO: Compress logs in directory
+# Verify input from the user
+if [[ -z "$1" ]]; then
+	echo "Error: Provide a file or folder"
+	exit 1
+else
 
-# TODO: Store in new directory
-
-# TODO: Name archive file "logs_archive_YYYYMMDD_HHMMSS.tar.gz"
+	# Perform Compression and Name according to requirement
+	error=$(tar --create --gzip --verbose --file "logs_archive_${DATE}_${TIME}.tar.gz" -P $1)
+	if [[ $? -ne 0 ]]; then
+		echo "Compression Failed with Error: $error"
+	fi
+fi
