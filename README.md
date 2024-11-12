@@ -87,4 +87,48 @@ sudo chmod +x log-archive.sh
 ```bash
 ./log-archive.sh <path_to_folder>
 ```
+## Nginx Log Analyser
+
+Write a simple tool to analyze logs from the command line.
+
+### Project Goal
+
+The log file contains the following fields:
+
+IP address
+Date and time
+Request method and path
+Response status code
+Response size
+Referrer
+User agent
+
+You are required to create a shell script that reads the log file and provides the following information:
+
+Top 5 IP addresses with the most requests
+Top 5 most requested paths
+Top 5 response status codes
+Top 5 user agents
+
+### Setup
+
+1. Navigate to the folder you want to clone the repository into.
+
+```bash
+git clone https://github.com/pratulmuthuraja/devops-roadmap-projects.git
+cd devops-roadmap-projects/nginx-log-analyser/
+```
+
+2. Make file executable
+
+```bash
+sudo chmod +x log-analyser.sh
+```
+
+### Usage
+
+1. Run script
+
+```bash
+./log-archive.sh <path_to_log_file>
 
