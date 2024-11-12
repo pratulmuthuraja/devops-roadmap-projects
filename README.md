@@ -89,7 +89,7 @@ sudo chmod +x log-archive.sh
 ```
 ## Nginx Log Analyser
 
-Write a simple tool to analyze logs from the command line.
+Write a simple tool to analyze logs from the command line. [Project Link](https://roadmap.sh/projects/nginx-log-analyser)
 
 ### Project Goal
 
